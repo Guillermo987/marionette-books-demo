@@ -83,7 +83,7 @@ MyApp.LibraryApp = function() {
                 data: 'q=' + query,
                 success: function(res) {
                     MyApp.vent.trigger("search:stop");
-                    if (res.totalItems == 0) {
+                    if (res.totalItems === 0) {
                         callback([]);
                         return [];
                     }

@@ -15,7 +15,7 @@ MyApp.Closer.close = function() {
     var closeView = new MyApp.Closer.DefaultView();
     MyApp.content.show(closeView);
     Backbone.history.navigate("close");
-}
+};
 
 MyApp.addInitializer(function() {
     MyApp.Closer.router = new MyApp.Closer.Router({
